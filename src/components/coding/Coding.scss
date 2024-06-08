@@ -1,0 +1,55 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+
+.coding-profiles-section {
+
+  background-image: url('/4.png');
+
+
+  background-position: center;
+
+  height: inherit;
+
+  h1{
+    font-size: 88px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 20px;
+    .orange-text {
+      color: orange;
+    }
+    
+  }
+}
+
+
+.profile-container{
+    display: flex;
+    margin: 5rem;
+
+    padding-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    .profile-image {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        border: 3px solid #fafafa;
+        align-items: center;
+
+    }
+    
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}

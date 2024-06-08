@@ -1,0 +1,59 @@
+.game{
+  padding: 10em;
+  h1{
+    font-size: 2.9em;
+    letter-spacing: 10px;
+    text-align: center;
+    transition: color 0.3s ease-in-out; // Add transition
+    color:#5d5d5d ;
+
+    &:hover {
+      color: white; // Change color on hover
+      transform: scale(1.2); 
+      transition-behavior: smooth;
+    }
+  }
+}
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+.card {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(253, 181, 46);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+.card:hover {
+    background-color: #ede9a7;
+  }
+  
+.card.flipped {
+    background-color: #33d8c7;
+    color: #ffffff;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: rgb(0, 161, 248);
+    }
+  }
+  
+
+.score{
+    color: #ffcd05;
+    font-size: 25px;
+  }
